@@ -1,6 +1,7 @@
-alert('hii everyone !');
+// alert('hii everyone !');
 function msg() {
    alert('hello');
-   console.log('this works');
-   document.getElementById('jeru').innerHTML = "this is clicked" ;
+   // console.log('this works');
+   // document.getElementById('jeru').innerHTML = "this is clicked" ;
 }
+  
