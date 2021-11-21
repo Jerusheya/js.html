@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <table>
+    <tr>
+        <td>
+            <input  id="num1"  type="number">
+            <input  id="num2"  type="number">
+            <p>=</p>
+            <input  id="result" type="number" value="result">
+       </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="mul()">*</button>
+            <button onclick="div()">/</button>
+       </td>
+    </tr>
+    </table>
+    <script>
+       function add(){
+           let a=parseInt(document.getElementById("num1").value);
+           let b=parseInt(document.getElementById("num2").value);
+           document.getElementById("result").value=a+b;
+       }
+       function sub(){
+           let a=parseInt(document.getElementById("num1").value);
+           let b=parseInt(document.getElementById("num2").value);
+           document.getElementById("result").value=a-b;
+       }
+       function mul(){
+           let a=parseInt(document.getElementById("num1").value);
+           let b=parseInt(document.getElementById("num2").value);
+           document.getElementById("result").value=a*b;
+       }
+       function div(){
+           let a=parseInt(document.getElementById("num1").value);
+           let b=parseInt(document.getElementById("num2").value);
+           document.getElementById("result").value=a/b;
+       }
+       
+       
+    </script>
+</body>
+</html>
