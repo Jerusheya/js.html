@@ -7,22 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>calculator</h1>
-    <table>
+    <center><h1>calculator</h1></center>
+    <center><table border="2" style="margin:10px;border-collapse: collapse;background-color:rgb(59, 2, 83)">
     <tr>
-        <td>
-            <input  id="num1"  type="number">
-            <input  id="num2"  type="number">
-            <p>=</p>
-            <input  id="result" type="number" value="result">
+        <td style="padding:20px;">
+            <input  id="num1"  type="number" placeholder="enter a value" style="text-align: center;">
+            <input  id="num2"  type="number" placeholder="enter a value" style="text-align: center;">
+            <p style="color:white;text-align: center;">=</p>
+            <center><input  id="result" type="number" placeholder="result" style="text-align:center;"></center>
        </td>
     </tr>
     <tr>
-        <td>
+        <td style="padding:20px;"><center>
             <button onclick="add()">+</button>
             <button onclick="sub()">-</button>
             <button onclick="mul()">*</button>
-            <button onclick="div()">/</button>
+            <button onclick="div()">/</button></center>
        </td>
     </tr>
     </table>
@@ -50,5 +50,6 @@
        
        
     </script>
+    </center>
 </body>
 </html>
