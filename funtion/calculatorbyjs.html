@@ -17,31 +17,28 @@
             height:40px;
             text-align:center;
             font-size: 30px;
-            
-        
         }
     </style>
 </head>
 <body>
-    <form id="form" style="padding:20%;">
-    <center>
-    <h1>Simple calculator</h1>
-    <input type="number" placeholder="enter a number" id="num1">
-    <br>
-    <input type="number" placeholder="enter a number" id="num2">
-    <br>
-    <select>
-        <option value="+" id="addoption">+</option>
-        <option value="-" id="suboption">-</option>
-        <option value="*" id="muloption">*</option>
-        <option value="/" id="divoption">/</option>
-    </select>
-    <br>
-    <input type="number" id="result">
-    <br>
-    <button onclick="output()">submit</button>
-    </center>
-    </form></html></html></html></html></html></html>
-    <script src="calculator.js"></script>
+    <form onsubmit="calculate()">
+        
+        <input type="tel" id="num1">
+        <br>
+        <input type="tel" id="num2">
+        <br>
+        <select id="sign">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br>
+          <input type="tel" id="result">
+          <br>
+          <button type="submit">Calculate</button>
+        </form>
+        
+        <script src="./calculator.js"></script>
 </body>
 </html>

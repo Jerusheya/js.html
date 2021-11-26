@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+       
+        }
+        input{
+            margin:30px;
+            width: 400px;
+            height:40px;
+            text-align:center;
+            font-size: 30px;
+            }
+            button{
+              width:50px;
+              height:30px;
+            }
+    </style>
 </head>
 <body>
     <center><h1>calculator</h1></center>
     <center><table border="2" style="margin:10px;border-collapse: collapse;background-color:rgb(59, 2, 83)">
     <tr>
         <td style="padding:20px;">
-            <input  id="num1"  type="number" placeholder="enter a value" style="text-align: center;">
-            <input  id="num2"  type="number" placeholder="enter a value" style="text-align: center;">
+            <input  id="num1"  type="number" placeholder="enter a value" ><br>
+            <input  id="num2"  type="number" placeholder="enter a value" ><br>
             <p style="color:white;text-align: center;">=</p>
-            <center><input  id="result" type="number" placeholder="result" style="text-align:center;"></center>
+            <center><input  id="result" type="number" placeholder="result" ></center>
        </td>
     </tr>
     <tr>
         <td style="padding:20px;"><center>
-            <button onclick="add()">+</button>
-            <button onclick="sub()">-</button>
-            <button onclick="mul()">*</button>
-            <button onclick="div()">/</button></center>
+            
+           <button onclick="add()">+</button>
+           <button onclick="sub()">-</button>
+           <button onclick="mul()">*</button>
+           <button onclick="div()">/</button>
+            
+        
+        </center>
        </td>
     </tr>
     </table>
