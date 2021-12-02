@@ -12,17 +12,22 @@
     <script>
         let array = ["add", 6, false];
 
-        // now adding an item to array to the last
-        array.push("j");
+        // // now adding an item to array to the last
+        // array.push("j");
+        // document.write(array);
+        // document.write('<br>');
+
+        // // now adding an item to first of the array
+        // array.unshift("1");
+        // document.write(array);
+        // document.write('<br>');
+
+        //adding inbetween two iterms
+        let midnum="jeru";
+        array.splice(1,0,midnum);//here 1=idex num,0=no.of deleted items
         document.write(array);
-        document.write('<br>');
 
-        // now adding an item to first of the array
-        array.unshift("1");
-        document.write(array);
-        document.write('<br>');
-
-
+       
 
     </script>
 </body>

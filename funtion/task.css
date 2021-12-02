@@ -1,0 +1,30 @@
+div{
+    background-color:rgb(51, 2, 51);
+    width:40%;
+    padding:50px;
+    margin:270px;
+    box-shadow: 15px 14px 50px black;
+    border-radius: 20px;
+}
+input{
+    width:400px;
+    height:40px;
+    font-size: 30px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20px;
+    border: transparent;
+}
+button{
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: transparent;
+}
+ul{
+    color:white;
+    list-style-type: none;
+    font-size: 30px;
+    margin-right: 50px;
+}

@@ -12,20 +12,20 @@
     <h1>remove a specific item from an array</h1>
     <script>
         let myArray = ["h", "e", "l", "l", "o"];
-        //document.write(myArray.length);
-        // document.write(myArray);
-        // document.write('<br>');
+        document.write(myArray.length);
+        document.write(myArray);
+        document.write('<br>');
 
 
-        // // now removing the last item
-        // myArray.pop();
-        // document.write(myArray);
-        // document.write('<br>');
+        // now removing the last item
+        myArray.pop();
+        document.write(myArray);
+        document.write('<br>');
 
-        // //now removing 1st item of the array
-        // myArray.shift();
-        // document.write(myArray);
-        // document.write('<br>');
+        //now removing 1st item of the array
+        myArray.shift();
+        document.write(myArray);
+        document.write('<br>');
 
         // //now removing items at array[e,l,l]
         myArray.splice(1, 3);//(from no.,count of no.)
@@ -36,7 +36,10 @@
         myArray.length = 2;
         document.write(myArray);
 
-
+        //removing some selected items
+        myArray.splice(1,1)//removes e and becomes h,l,l,o
+        myArray.splice(1,1)//removes l and becomes h,l,o
+        document.write(myArray);//output=h,l,o
     </script>
 </body>
 

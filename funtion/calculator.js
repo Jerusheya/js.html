@@ -1,7 +1,7 @@
 console.log("jeru");
 
 function calculate() {
-    event.preventDefault();
+    event.preventDefault();//prevents from refreshing
     let a=parseFloat(document.getElementById("num1").value);
     let b=parseFloat(document.getElementById("num2").value);
     let c=document.getElementById("sign").value;
