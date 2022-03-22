@@ -1,4 +1,17 @@
 let tasklists=[];
+function onPageLoad(){
+  console.group("onPageLoad");
+      const users = JSON.parse(localStorage.getItem('taskstored'));
+      console.log(users);
+      
+      if (users==null) {
+          forgetpassword = [];
+      }
+      else{
+          forgetpassword=users;
+      }
+    console.groupEnd("onPageLoad");
+  }
 
 
  //updates values in local storage
@@ -32,21 +45,21 @@ function createlist(){
   const inString=JSON.parse(againToArray);//parse changes to object=array
   tasklists=inString;
  
-//    let tasks="";  //i<fwsa.length
-//    for(let i=0; i<inString.length; i++){   //for( let initial value,condition,step)
-//        let newtask="<li>" +inString[i] +"</li>";   //array[0] array[1]
-//        tasks=tasks+newtask;
+   let tasks="";  //i<fwsa.length
+   for(let i=0; i<inString.length; i++){   //for( let initial value,condition,step)
+       let newtask="<li>" +inString[i] +"</li>";   //array[0] array[1]
+       tasks=tasks+newtask;
  
-//    }
+   }
  
-//    let ulTag=document.getElementById("lists");//<ul></ul>
-//    ulTag.innerHTML=tasks;
-//  };
+   let ulTag=document.getElementById("lists");//<ul></ul>
+   ulTag.innerHTML=tasks;
+ };
  
 
 
 
-createlist();//this creates the list whenever the page is reloaded.
+onPageLoad();//this creates the list whenever the page is reloaded.
 //nothing to do with user so it is not written in html
 
 

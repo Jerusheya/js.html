@@ -25,20 +25,20 @@
         height:50px;
         font-size: 40px;
         border-radius: 20px;
+        text-align: right;
       }
+
     </style>
 </head>
 <body>
 <center>
-    <form >
+    <form name="calculator">
         <table class="table">
             <tr>
                 <td>
                   <table>
                    <tr>
-                    <td>
-                      <input id="display" name="display" value="0">
-                    </td>
+                    <td> <input id="display" name="result" Placeholder="0"> </td>
                    </tr>
                  </table>
                 </td>
@@ -48,48 +48,48 @@
                  <table>
                   <tr>
                    
-                   <td> <input type="button"  value="%"   onclick="form.display.value+='%'" > </td>
-                   <td> <input type="button"  value="cos" onclick="cos()"> </td>
-                   <td><input type="button"  value="sin" onclick="sin()"></td> 
-                   <td> <input type="button"  value="tan" onclick="tan()"> </td>
-                   <td> <input type="button"  value="C"   onclick="form.display.value=''"> </td>
+                   <!-- <td> <input type="button"  value="tan" onclick="calculator.result.value+=tan()"> </td>
+                   <td> <input type="button"  value="cos" onclick="calculator.result.value+=cos()"> </td>
+                   <td> <input type="button"  value="sin" onclick="calculator.result.value+=sin()"> </td> 
+                   <td> <input type="button"  value="x^2" onclick="calculator.result.value+=square()" > </td> -->
+                   <td> <input type="button"  value="C"   onclick="calculator(this)"> </td>
                   
                  </tr>
                  <tr>
-                    <td><input type="button"  value="7" onclick="form.display.value+='7'"> </td>
-                    <td> <input type="button"  value="8" onclick="form.display.value+='8'"> </td>
-                    <td><input type="button"  value="9" onclick="form.display.value+='9'"> </td>
-                    <td> <input type="button"  value="x^2" onclick="square()"></td> 
-                     <td> <input type="button"  value="x^3" onclick="cube()"> </td>
+                    <td> <input type="button"  value="7" onclick="calculator(this)"> </td>
+                    <td> <input type="button"  value="8" onclick="calculator(this)"> </td>
+                    <td> <input type="button"  value="9" onclick="calculator(this)"> </td>
+                    <!-- <td> <input type="button"  value="x^3" onclick="calculator.result.value+=cube()"> </td>  -->
+                    <td> <input type="button"  value="/" onclick="calculator(this)"> </td>
                   
                  </tr>
                  <tr>
-                  <td> <input type="button"  value="4" onclick="form.display.value+='4'"></td> 
-                  <td> <input type="button"  value="5" onclick="form.display.value+='5'"> </td>
-                  <td> <input type="button"  value="6" onclick="form.display.value+='6'"> </td>
-                  <td> <input type="button"  value="ln" onclick="form.display.value+='ln'"> </td>
-                  <td> <input type="button"  value="*" onclick="form.display.value+='*'"></td>
+                  <td> <input type="button"  value="4" onclick="calculator(this)"> </td> 
+                  <td> <input type="button"  value="5" onclick="calculator(this)"> </td>
+                  <td> <input type="button"  value="6" onclick="calculator(this)"> </td>
+                  <td> <input type="button"  value="ln"onclick="calculator(this)"> </td>
+                  <td> <input type="button"  value="*" onclick="calculator(this)"> </td>
                  </tr>
                  <tr>
-                  <td> <input type="button"  value="1" onclick="form.display.value+='1'"></td> 
-                  <td> <input type="button" value="2" onclick="form.display.value+='2'"></td> 
-                  <td> <input type="button"  value="3" onclick="form.display.value+='3'"></td> 
-                  <td> <input type="button"   value="&radic;" onclick="form.display.value+=square()"></td> 
-                  <td> <input type="button"   value="-" onclick="form.display.value+='-'"></td>
+                  <td> <input type="button"  value="1" onclick="calculator(this)"> </td> 
+                  <td> <input type="button"  value="2" onclick="calculator(this)"> </td> 
+                  <td> <input type="button"  value="3" onclick="calculator(this)"> </td> 
+                  <td> <input type="button"  value="√" onclick="calculator(this)"> </td> 
+                  <td> <input type="button"  value="-" onclick="calculator(this)"> </td>
                  </tr>
                  <tr>
-                  <td> <input type="button"   value="&#177" onclick="form.display.value+='&#177'"></td> 
-                  <td>  <input type="button"  value="0" onclick="form.display.value+='0'"> </td>
-                  <td>  <input type="button"   value="&#46;" onclick="form.display.value+='&#46'"> </td>
-                  <td>  <input type="button"  value="x&#50;" onclick="form.display.value+='x&#50'"> </td>
-                  <td>  <input type="button"  value="+" onclick="form.display.value+='+'"> </td>
+                  
+                  <td> <input type="button"  value="0" onclick="calculator(this)"> </td>
+                  <td> <input type="button"  value="." onclick="calculator(this)"> </td>
+
+                  <td> <input type="button"  value="+" onclick="calculator(this)"> </td>
                 </tr>
                 <tr>
-                 <td><input type="button"   value="(" onclick="form.display.value+='('"> </td>
-                 <td>  <input type="button"  value=")" onclick="form.display.value+=')'"></td> 
-                 <td>  <input type="button"   value="/" onclick="form.display.value+='/'"></td> 
-                 <td>  <input type="button"  value="&#960;"onclick="form.display.value+='&#960'"></td> 
-                 <td>  <input type="button"  value="="   onclick="form.display.value=eval(form.display.value)">  </td>
+                 <td>  <input type="button"  value="(" onclick="calculator(this)"> </td>
+                 <td>  <input type="button"  value=")" onclick="calculator(this)"> </td> 
+                 <td>  <input type="button"  value="BACKSPC"   onclick="calculator.result.value+=BACKSPC()"> </td> 
+                 <td>  <input type="button"  value="&#960;"onclick="calculator.result.value+='&#960'"> </td> 
+                 <td>  <input type="button"  value="="  onclick="calculator(this)"></td>
                 </tr>
               </table>
             </td>
@@ -97,7 +97,7 @@
         </table>
        </form>
 <script src="original calculator.js">
-
+   
 </script>
 </body>
 </html>
